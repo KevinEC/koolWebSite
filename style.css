@@ -1,3 +1,8 @@
+a,p{
+    color: whitesmoke;
+    font-family: Roboto;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -19,7 +24,7 @@ nav{
 nav div{
     text-align: center;
     white-space: nowrap;
-    margin: 0 2%;
+    margin: 0 1.5%;
 }
 nav div a{
     color: whitesmoke;
@@ -33,7 +38,7 @@ nav div a{
     border-bottom: 2px solid whitesmoke;
     padding-bottom: 1px;
     transition-property: color, width, border;
-    transition-duration: 0.05s;
+    transition-duration: 0.08s;
     transition-timing-function: ease-out;
 }
 nav div a:hover{
@@ -46,16 +51,20 @@ nav div a:hover{
     flex-flow: row nowrap;
     margin-left:auto;
 }
-#etherData img,div{
+#etherData div{
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
 }
-#etherData div p,span{
+#etherDataLogo{
+    height: 60px;
+    width: auto;
+}
+
+#etherDataInfo p,span{
     margin: 0;
     padding: 0;
-    color: whitesmoke;
 }
 #slider{
     background: url("pics/slider1.jpg") center left / cover no-repeat;
