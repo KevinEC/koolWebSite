@@ -1,6 +1,8 @@
-a,p,h1,h2,h3,h4,h5{
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+a,p,h1,h2,h3,h4,h5, li{
     color: whitesmoke;
-    font-family: Roboto;
+    font-family: 'Roboto';
 }
 body{
     padding: 0;
@@ -73,7 +75,6 @@ nav div a:hover{
 #main{
     width: 100%;
     background-color: whitesmoke;
-    height: 1000px;
 
 
 
@@ -82,9 +83,9 @@ nav div a:hover{
     align-items: center;
 }
 .mainSection{
-    width: calc(100% - 30px*2);
+    width: calc(100% - 70px*2);
     background-color: #eaeaea;
-    padding: 30px;
+    padding: 30px 70px;
 
     display: flex;
     flex-flow: column;
@@ -95,14 +96,26 @@ nav div a:hover{
     padding: 15px;
     margin: 0;
 
-    color: #1d1d1d;
     font-size: 4vw;
     white-space: nowrap;
-    border: 2px solid #1d1d1d;
+    border: 2px solid whitesmoke;
 }
 .mainSection p{
-    color: #1d1d1d;
 }
 .mainSection img{
     margin: 10px;
 }
+.list{
+    padding: 10px;
+}
+.mainSection ul{
+    align-self: flex-start;
+    margin: 0;
+}
+.mainSection ul li{
+    margin: 10px 0;
+    font-size: 18px;
+}
+#sectionEther { background-color: #102026; }
+#sectionBlockchain { background-color: #133339; }
+#sectionBit { background-color: #102026; }
