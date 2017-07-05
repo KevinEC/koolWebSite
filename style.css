@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
 
 a,p,h1,h2,h3,h4,h5, li{
     color: whitesmoke;
@@ -38,8 +38,9 @@ nav div a{
 
     /*Stuff for nice underscore*/
     display: inline;
-    border-bottom: 2px solid whitesmoke;
+    border-bottom: 2px solid rgba(0,0,0,0);
     padding-bottom: 1px;
+	
     transition-property: color, width, border;
     transition-duration: 0.08s;
     transition-timing-function: ease-out;
@@ -53,8 +54,9 @@ nav div a:hover{
     display: flex;
     flex-flow: row nowrap;
     margin-left: auto;
+	height: 100%;
 }
-#etherData div{
+#etherDataLogoContainer{
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -62,16 +64,75 @@ nav div a:hover{
 }
 #etherDataLogo{
     height: 60px;
+	filter: brightness(0.1) invert(100%);
+}
+#etherDataInfo{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
 }
 #etherDataInfo p,span{
-    margin: 0;
+    margin: 2px 0;
     padding: 0;
 }
 #slider{
-    background: url("pics/slider1.jpg") center left / cover no-repeat;
-    height: 400px;
+    background: url("pics/slider1.jpg") center center / cover no-repeat;
+    height: 100vh;
     width: 100%;
+	
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
 }
+#sliderLogo{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	
+}
+#sliderLogo img{
+	width: 250px;
+	height: auto;
+	filter: brightness(0.1) invert(100%);
+}
+#sliderLogoText{
+	font-weight: 100;
+	letter-spacing: 12px;
+	font-size: 130px;
+}
+#sliderLogoText span{
+	color: #102026;
+}
+#sliderText{
+	width: 45%;							
+	
+}
+#sliderText p{
+	font-size: 20px;
+	text-align: center
+	color: white;
+}
+#arrowbtn{
+	position: absolute;
+	bottom: 50px;
+	filter: invert(100%);
+	transform: rotate(180deg);
+	
+	width: 40px;
+	
+	transition-property: color, bottom;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+}
+#arrowbtn:hover{
+	bottom: 45px;
+	cursor: pointer;
+}
+
 #main{
     width: 100%;
     background-color: whitesmoke;
@@ -84,23 +145,26 @@ nav div a:hover{
 }
 .mainSection{
     width: calc(100% - 70px*2);
+	
     background-color: #eaeaea;
-    padding: 30px 70px;
+    padding: 5% 70px;
 
     display: flex;
     flex-flow: column;
-    align-items: center;
 }
 .mainTitle{
     width: calc(100% - 15px*2);
     padding: 15px;
     margin: 0;
+	margin-bottom: 10px;
 
-    font-size: 4vw;
+    font-size: 5vw;
+	font-weight: 100;
     white-space: nowrap;
-    border: 2px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
 }
 .mainSection p{
+	font-size: 18px;
 }
 .mainSection img{
     margin: 10px;
@@ -109,13 +173,28 @@ nav div a:hover{
     padding: 10px;
 }
 .mainSection ul{
-    align-self: flex-start;
     margin: 0;
 }
 .mainSection ul li{
     margin: 10px 0;
     font-size: 18px;
 }
+.mainSection h4{
+	font-size: 22px;
+	font-weight: 300;
+	font-style: italic;
+	margin: 1em 0;
+}
+.mainSection h5{
+	font-size: 20px;
+	margin: 0;
+	
+}
+.rightoffset{
+	margin-left: 50px;
+}
 #sectionEther { background-color: #102026; }
 #sectionBlockchain { background-color: #133339; }
 #sectionBit { background-color: #102026; }
+#sectionDecentralized { background-color: #133339; }
+#sectionFuture { background-color: #102026; }
