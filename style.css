@@ -55,6 +55,15 @@ nav div a:hover{
     width: calc(100% + 10px);
     border-bottom: 2px solid white;
 }
+footer{
+	width: 100%;
+	padding: 5% 0;
+	background-color: #1d1d1d;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
 #etherData{
     display: flex;
     flex-flow: row nowrap;
