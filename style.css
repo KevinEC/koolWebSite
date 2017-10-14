@@ -7,7 +7,7 @@ h1,h2,h3,h4,h5,li,span{
 }
 p,a{
 	color: whitesmoke;
-    font-family: 'Open Sans';
+  font-family: 'Open Sans';
 }
 body{
     padding: 0;
@@ -45,7 +45,7 @@ nav div a{
     display: inline;
     border-bottom: 2px solid rgba(0,0,0,0);
     padding-bottom: 1px;
-	
+
     transition-property: color, width, border;
     transition-duration: 0.08s;
     transition-timing-function: ease-out;
@@ -95,7 +95,7 @@ footer{
     background: url("pics/slider2.jpg") center center / cover no-repeat;
     height: 100vh;
     width: 100%;
-	
+
 	display: flex;
 	flex-flow: column wrap;
 	align-items: center;
@@ -106,7 +106,7 @@ footer{
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
-	
+
 }
 #sliderLogo img{
 	width: 250px;
@@ -122,8 +122,8 @@ footer{
 	color: #102026;
 }
 #sliderText{
-	width: 45%;							
-	
+	width: 45%;
+
 }
 #sliderText p{
 	font-size: 20px;
@@ -135,9 +135,9 @@ footer{
 	bottom: 50px;
 	filter: invert(100%);
 	transform: rotate(180deg);
-	
+
 	width: 40px;
-	
+
 	transition-property: color, bottom;
     transition-duration: 0.1s;
     transition-timing-function: ease-out;
@@ -150,16 +150,13 @@ footer{
 #main{
     width: 100%;
     background-color: whitesmoke;
-
-
-
     display: flex;
     flex-flow: column;
     align-items: center;
 }
 .mainSection{
     width: calc(100% - 70px*2);
-	
+
     background-color: #eaeaea;
     padding: 5% 70px;
 
@@ -177,8 +174,12 @@ footer{
     white-space: nowrap;
     border-bottom: 1px solid whitesmoke;
 }
+.subTitle{
+  margin: 0;
+  font-size: 2vw;
+}
 .mainSection p{
-	font-size: 18px;
+	font-size: 17px;
 }
 .mainSection img{
     margin: 10px;
@@ -202,13 +203,21 @@ footer{
 .mainSection h5{
 	font-size: 20px;
 	margin: 0;
-	
+
 }
 .rightoffset{
 	margin-left: 50px;
+}
+.descImg{
+  width: 500px;
+}
+.noListStyle{
+  list-style: none;
 }
 #sectionEther { background-color: #102026; }
 #sectionBlockchain { background-color: #133339; }
 #sectionBit { background-color: #102026; }
 #sectionDecentralized { background-color: #133339; }
 #sectionFuture { background-color: #102026; }
+#sectionBuy { background-color: #133339; }
+#sectionStore { background-color: #102026; }
