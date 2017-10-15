@@ -14,19 +14,17 @@
       <div><a href="#">Om oss</a></div>
       <div id="etherData">
           <div id="etherDataLogoContainer">
-              <img id="etherDataLogo" src="pics/icon.png" alt="Ethereum ikon">
+              <img id="etherDataLogo" src="pics/icon2.png" alt="Ethereum ikon">
           </div>
           <div id="etherDataInfo">
-              <p>382.9$</p>
-              <span>
-                  0.2%
-              </span>
+              <p id="price"></p>
+              <span id="priceChange"></span>
           </div>
       </div>
     </nav>
     <div id="slider">
   		<div id="sliderLogo">
-  			<img src="pics/icon.png" alt="Ethereum ikon">
+  			<img src="pics/icon2.png" alt="Ethereum ikon">
   			<h1 id="sliderLogoText">
   				<span>swe</span>thereum
   			</h1>
@@ -133,30 +131,28 @@
       <p>
         Det finns några olika sätt att köpa Ethereum, eller rättare sagt Ether (Ethereums valuta). I Sverige finns det ingen börs som säljer Ether, men nedan följer de smidigaste sätten att införskaffa Ether på andra sätt.
       </p>
-      <div class="rightoffset">
-        <h5>Coinbase</h5>
-        <p>
-          På <em>Coinbase</em> går det att köpa Ether med både <strong>kortbetalning</strong> och <strong>banköverföring</strong>.
-        </p>
-        <img class="descImg" src="pics/coinbase.jpg" />
-        <p>
-          I Sverige betalar man en avgift på 4% vid kortbetalning. Banköverföring är fritt från avgifter men tar 2-3 dagar innan pengarna kommer in på kontot. För att kunna köpa på Coinbase så behöver man verifiera sig genom att skicka in en bild på en ID-handling.
-        </p>
-        <p>
-          <em>Länk: <a href="https://www.coinbase.com">www.coinbase.com</a></em>
-        </p>
-        <h5>BTCX</h5>
-        <p>
-          Vill/kan man inte köpa med ovanstående metod så går det att köpa Bitcoin och sedan omvandla det till Ether. På den svenska marknadsplatsen <em>BTCX</em> går det att köpa Bitcoin med <strong>Swish</strong>. För att sedan omvandla sina Bitcoins till Ether används smidigast <em>Shapeshift</em>.
-        </p>
-        <img class="descImg" src="pics/btcxandshapeshift.jpg" />
-        <p>
-          Denna metod innebär en högre avgift på sitt köp. BTCX tar cirka 7% i avgifter vid köp från dem.
-        </p>
-        <p>
-          <em>Länkar: <a href="https://www.bt.cx">www.bt.cx</a> , <a href="https://www.shapeshift.io">www.shapeshift.io</a></em>
-        </p>
-      </div>
+      <h5>Coinbase</h5>
+      <p>
+        På <em>Coinbase</em> går det att köpa Ether med både <strong>kortbetalning</strong> och <strong>banköverföring</strong>.
+      </p>
+      <img class="descImg" src="pics/coinbase.jpg" alt="Coinbase overview" />
+      <p>
+        I Sverige betalar man en avgift på 4% vid kortbetalning. Banköverföring är fritt från avgifter men tar 2-3 dagar innan pengarna kommer in på kontot. För att kunna köpa på Coinbase så behöver man verifiera sig genom att skicka in en bild på en ID-handling.
+      </p>
+      <p>
+        <em>Länk: <a href="https://www.coinbase.com">www.coinbase.com</a></em>
+      </p>
+      <h5>BTCX</h5>
+      <p>
+        Vill/kan man inte köpa med ovanstående metod så går det att köpa Bitcoin och sedan omvandla det till Ether. På den svenska marknadsplatsen <em>BTCX</em> går det att köpa Bitcoin med <strong>Swish</strong>. För att sedan omvandla sina Bitcoins till Ether används smidigast <em>Shapeshift</em>.
+      </p>
+      <img class="descImg" src="pics/btcxandshapeshift.jpg" alt="BTCX and Shapeshift overview"/>
+      <p>
+        Denna metod innebär en högre avgift på sitt köp. BTCX tar cirka 7% i avgifter vid köp från dem.
+      </p>
+      <p>
+        <em>Länkar: <a href="https://www.bt.cx">www.bt.cx</a> , <a href="https://www.shapeshift.io">www.shapeshift.io</a></em>
+      </p>
     </div>
     <div class="mainSection" id="sectionStore">
       <h1 class="mainTitle">Hur förvarar man Ether?</h1>
@@ -182,7 +178,7 @@
         <p>
           Den bästa sådana tjänsten i dagsläget är <a href="https://www.myetherwallet.com">www.myetherwallet.com</a>.
         </p>
-        <img class="descImg" src="pics/mew.jpg" />
+        <img class="descImg" src="pics/mew.jpg" alt="MyEtherWallet overview"/>
         <ul class="noListStyle">
           <li><strong>+</strong> Gratis.</li>
           <li><strong>+</strong> Låg risk för att bli hackad.</li>
@@ -204,11 +200,13 @@
       </div>
     </div>
 
-  </div>
-  <footer>
-  	<p>Vår email-adress!</p>
-  	<a href="mailto:kontakt@swethereum.com">kontakt@swethereum.com</a>
-  	<h5>Ursäkta röran, vi bygger om!</h5>
-  </footer>
+    </div>
+    <footer>
+    	<p>Vår email-adress!</p>
+    	<a href="mailto:kontakt@swethereum.com">kontakt@swethereum.com</a>
+    	<h5>Ursäkta röran, vi bygger om!</h5>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

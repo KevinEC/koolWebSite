@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 
 h1,h2,h3,h4,h5,li,span{
     color: whitesmoke;
@@ -88,13 +88,13 @@ footer{
 	height: 100%;
 }
 #etherDataInfo p,span{
-    margin: 2px 0;
-    padding: 0;
+  margin: 2px 0;
+  padding: 0;
 }
 #slider{
-    background: url("pics/slider2.jpg") center center / cover no-repeat;
-    height: 100vh;
-    width: 100%;
+  background: #a3c2d4 url("pics/slider3.jpg") center center / cover no-repeat;
+  height: 100vh;
+  width: 100%;
 
 	display: flex;
 	flex-flow: column wrap;
